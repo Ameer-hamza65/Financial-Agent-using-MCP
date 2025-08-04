@@ -1,0 +1,5 @@
+streamlit
+langchain_mcp_adapters
+langgraph_supervisor
+python-dotenv
+asyncio
