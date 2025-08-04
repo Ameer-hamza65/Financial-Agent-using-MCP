@@ -3,7 +3,7 @@ from langchain.chat_models import init_chat_model
 from config import Config
 
 async def create_agent(tools, prompt, name):
-    model = init_chat_model(model=Config.MODEL_NAME, api_key=Config.OPENAI_API_KEY)
+    model = init_chat_model("gemini-2.5-flash", model_provider="google_genai", api_key=Config.OPENAI_API_KEY)
     return create_react_agent(model, tools, prompt=prompt, name=name)
 
 async def get_all_agents(tools):
