@@ -9,7 +9,7 @@ async def create_agent(tools, prompt, name):
 async def get_all_agents(tools):
     agents = {}
     
-    agents["stock_finder"] = await create_agent(
+    agents["stock_finder"] = await create_agent( 
         tools,
         prompt="""[Stock Finder Agent] You are a stock research analyst specializing in Indian Stock Market (NSE). 
         Select 2 promising, actively traded NSE-listed stocks for short term trading based on:
